@@ -1,0 +1,53 @@
+# Git backup directory
+.git_ci3_backup/
+
+# Legacy CI3 (Disimpan di lokal, tidak dimasukkan ke pekaelv2)
+/application/
+/system/
+index.ci3.php
+
+# Environment Configuration
+.env
+
+# Composer Dependencies
+/vendor/
+composer.lock
+
+# CodeIgniter 4 Writable Directory
+/writable/**/*
+!/writable/**/
+!/writable/**/index.html
+!/writable/**/.gitkeep
+!/writable/**/.htaccess
+
+# User Uploaded Content (Semua file upload diabaikan, struktur folder dipertahankan via .gitkeep)
+/uploads/**/*
+!/uploads/**/
+!/uploads/**/.gitkeep
+!/uploads/**/index.html
+
+/public/uploads/**/*
+!/public/uploads/**/
+!/public/uploads/**/.gitkeep
+!/public/uploads/**/index.html
+
+# Temporary & Scratch
+/scratch/
+tests/mocks/database/ci_test.sqlite
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+/nbproject/
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project

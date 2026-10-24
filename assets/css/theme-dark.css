@@ -1,0 +1,396 @@
+/* ==========================================================================
+   PEKAEL MODERN THEME - DARK & LIGHT MODE STYLES
+   Dark Mode: Pure white text (#ffffff / #f8fafc), sleek dark slate (#0f172a / #1e293b)
+   Light Mode: Pure dark text (#0f172a / #1e293b), crisp clean light (#f8fafc / #ffffff)
+   ========================================================================== */
+
+/* =========================================
+   1. GLOBAL BODY & LAYOUT WRAPPERS
+   ========================================= */
+body.theme-dark,
+html.theme-dark body {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark #wrapper,
+body.theme-dark #content-wrapper,
+body.theme-dark #content {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+/* =========================================
+   2. TYPOGRAPHY - PURE WHITE IN DARK MODE
+   ========================================= */
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark h5,
+body.theme-dark h6,
+body.theme-dark .h1,
+body.theme-dark .h2,
+body.theme-dark .h3,
+body.theme-dark .h4,
+body.theme-dark .h5,
+body.theme-dark .h6 {
+    color: #ffffff !important;
+}
+
+body.theme-dark .text-gray-900,
+body.theme-dark .text-gray-800,
+body.theme-dark .text-gray-700,
+body.theme-dark .text-dark,
+body.theme-dark b,
+body.theme-dark strong {
+    color: #ffffff !important;
+}
+
+body.theme-dark .text-muted,
+body.theme-dark .text-gray-600,
+body.theme-dark .text-gray-500,
+body.theme-dark small {
+    color: #cbd5e1 !important; /* Slate-300: High-contrast legible muted text */
+}
+
+body.theme-dark label,
+body.theme-dark .col-form-label {
+    color: #ffffff !important;
+}
+
+body.theme-dark code {
+    background-color: #020617 !important;
+    color: #a5b4fc !important;
+    border: 1px solid #334155 !important;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.35rem;
+}
+
+/* =========================================
+   3. TOPBAR & NAVIGATION
+   ========================================= */
+body.theme-dark .topbar {
+    background-color: #0f172a !important;
+    border-bottom: 1px solid #1e293b !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.theme-dark .school-brand-text {
+    color: #ffffff !important;
+}
+
+body.theme-dark .topbar .nav-link {
+    color: #f8fafc !important;
+}
+
+body.theme-dark .topbar-divider {
+    border-right: 1px solid #1e293b !important;
+}
+
+body.theme-dark #sidebarToggleTop {
+    color: #f8fafc !important;
+    background-color: #1e293b !important;
+}
+
+body.theme-dark .topbar-portal-btn {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f1f5f9 !important;
+}
+
+body.theme-dark .topbar-portal-btn:hover {
+    background-color: #334155 !important;
+    color: #ffffff !important;
+    border-color: #475569 !important;
+}
+
+body.theme-dark .topbar-theme-btn {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #fbbf24 !important;
+}
+
+body.theme-dark .topbar-theme-btn:hover {
+    background-color: #334155 !important;
+    border-color: #475569 !important;
+}
+
+body.theme-dark .topbar-method-btn {
+    background-color: #1e1b4b !important;
+    border-color: #4338ca !important;
+    color: #c7d2fe !important;
+}
+
+body.theme-dark .topbar-method-btn:hover,
+body.theme-dark .topbar-method-btn:focus {
+    background-color: #312e81 !important;
+    color: #e0e7ff !important;
+}
+
+body.theme-dark .topbar-method-btn.proporsional {
+    background-color: #082f49 !important;
+    border-color: #0284c7 !important;
+    color: #bae6fd !important;
+}
+
+body.theme-dark .topbar-method-btn.proporsional:hover,
+body.theme-dark .topbar-method-btn.proporsional:focus {
+    background-color: #0369a1 !important;
+    color: #e0f2fe !important;
+}
+
+body.theme-dark .topbar-dapo-badge {
+    background-color: rgba(5, 150, 105, 0.2) !important;
+    border-color: #059669 !important;
+    color: #6ee7b7 !important;
+}
+
+body.theme-dark .badge-soft-secondary {
+    background-color: #1e293b !important;
+    color: #cbd5e1 !important;
+    border: 1px solid #334155 !important;
+}
+
+/* =========================================
+   4. CARDS & PANELS
+   ========================================= */
+body.theme-dark .card {
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25), 0 2px 4px -2px rgba(0, 0, 0, 0.15) !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark .card-header {
+    background-color: #1e293b !important;
+    border-bottom: 1px solid #334155 !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .card-header .m-0,
+body.theme-dark .card-header h6 {
+    color: #ffffff !important;
+}
+
+body.theme-dark .card-footer {
+    background-color: #1e293b !important;
+    border-top: 1px solid #334155 !important;
+}
+
+/* =========================================
+   5. TABLES & DATATABLES
+   ========================================= */
+body.theme-dark .table {
+    color: #f8fafc !important;
+    border-color: #334155 !important;
+}
+
+body.theme-dark .table thead th,
+body.theme-dark .thead-light th,
+body.theme-dark .table th {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+    border-color: #334155 !important;
+    border-bottom: 2px solid #334155 !important;
+}
+
+body.theme-dark .table tbody td,
+body.theme-dark .table td {
+    color: #f8fafc !important;
+    border-color: #334155 !important;
+    background-color: transparent !important;
+}
+
+body.theme-dark .table-hover tbody tr:hover {
+    background-color: rgba(51, 65, 85, 0.6) !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .table-bordered {
+    border: 1px solid #334155 !important;
+}
+
+body.theme-dark .table-bordered th,
+body.theme-dark .table-bordered td {
+    border: 1px solid #334155 !important;
+}
+
+body.theme-dark .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(15, 23, 42, 0.4) !important;
+}
+
+body.theme-dark .table-primary-light {
+    background-color: rgba(79, 70, 229, 0.25) !important;
+}
+
+body.theme-dark .dataTables_wrapper .dataTables_length,
+body.theme-dark .dataTables_wrapper .dataTables_filter,
+body.theme-dark .dataTables_wrapper .dataTables_info,
+body.theme-dark .dataTables_wrapper .dataTables_processing,
+body.theme-dark .dataTables_wrapper .dataTables_paginate {
+    color: #f8fafc !important;
+}
+
+body.theme-dark .page-item .page-link {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark .page-item.active .page-link {
+    background-color: #4f46e5 !important;
+    border-color: #4f46e5 !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .page-item.disabled .page-link {
+    background-color: #0f172a !important;
+    border-color: #334155 !important;
+    color: #64748b !important;
+}
+
+/* =========================================
+   6. FORMS & INPUTS
+   ========================================= */
+body.theme-dark .form-control,
+body.theme-dark select.form-control,
+body.theme-dark textarea.form-control {
+    background-color: #0f172a !important;
+    border-color: #475569 !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .form-control:focus {
+    background-color: #0f172a !important;
+    border-color: #6366f1 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25) !important;
+}
+
+body.theme-dark .form-control::placeholder {
+    color: #64748b !important;
+}
+
+body.theme-dark .input-group-text {
+    background-color: #334155 !important;
+    border-color: #475569 !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark .custom-control-label {
+    color: #f8fafc !important;
+}
+
+/* =========================================
+   7. MODALS & POPUPS
+   ========================================= */
+body.theme-dark .modal-content {
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark .modal-header {
+    background-color: #1e293b !important;
+    border-bottom: 1px solid #334155 !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .modal-footer {
+    background-color: #1e293b !important;
+    border-top: 1px solid #334155 !important;
+}
+
+body.theme-dark .modal-title {
+    color: #ffffff !important;
+}
+
+body.theme-dark .modal-header .close {
+    color: #ffffff !important;
+    opacity: 0.8 !important;
+    text-shadow: none !important;
+}
+
+body.theme-dark .modal-header .close:hover {
+    opacity: 1 !important;
+}
+
+/* =========================================
+   8. DROPDOWNS & LIST GROUPS
+   ========================================= */
+body.theme-dark .dropdown-menu {
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark .dropdown-item {
+    color: #f8fafc !important;
+}
+
+body.theme-dark .dropdown-item:hover,
+body.theme-dark .dropdown-item:focus {
+    background-color: #334155 !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .dropdown-divider {
+    border-top: 1px solid #334155 !important;
+}
+
+body.theme-dark .list-group-item {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #f8fafc !important;
+}
+
+/* =========================================
+   9. UTILITIES, BORDERS & BADGES
+   ========================================= */
+body.theme-dark .bg-white {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark .bg-light {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark .border,
+body.theme-dark .border-top,
+body.theme-dark .border-bottom,
+body.theme-dark .border-left,
+body.theme-dark .border-right {
+    border-color: #334155 !important;
+}
+
+body.theme-dark hr {
+    border-color: #334155 !important;
+}
+
+body.theme-dark .badge-light {
+    background-color: #334155 !important;
+    border-color: #475569 !important;
+    color: #f8fafc !important;
+}
+
+body.theme-dark footer.sticky-footer {
+    background-color: #1e293b !important;
+    border-top: 1px solid #334155 !important;
+    color: #cbd5e1 !important;
+}
+
+/* Custom Scrollbar for Dark Mode */
+body.theme-dark ::-webkit-scrollbar-track {
+    background: #0f172a !important;
+}
+body.theme-dark ::-webkit-scrollbar-thumb {
+    background: #334155 !important;
+}
+body.theme-dark ::-webkit-scrollbar-thumb:hover {
+    background: #475569 !important;
+}

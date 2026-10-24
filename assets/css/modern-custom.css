@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --primary-light: #eef2ff;
+    --secondary: #64748b;
+    --success: #059669;
+    --success-light: #ecfdf5;
+    --warning: #d97706;
+    --warning-light: #fffbeb;
+    --danger: #dc2626;
+    --danger-light: #fef2f2;
+    --info: #0284c7;
+    --info-light: #f0f9ff;
+    --bg-body: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+    --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    font-family: var(--font-sans) !important;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    letter-spacing: -0.01em;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Page Layout Wrappers */
+#wrapper {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+    background-color: var(--bg-body);
+}
+
+#content-wrapper {
+    background-color: var(--bg-body) !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#content {
+    flex: 1 0 auto !important;
+    background-color: var(--bg-body);
+}
+
+/* Sidebar Modern Styling */
+#accordionSidebar {
+    width: 255px !important;
+    min-width: 255px !important;
+    background-color: #0f172a !important;
+    background-image: linear-gradient(180deg, #0f172a 0%, #1e1b4b 60%, #312e81 100%) !important;
+    box-shadow: 4px 0 20px 0 rgba(0, 0, 0, 0.06);
+    z-index: 100;
+}
+
+#accordionSidebar.toggled {
+    width: 6.5rem !important;
+    min-width: 6.5rem !important;
+    overflow: visible;
+}
+
+.sidebar .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 0.88rem;
+    padding: 0.8rem 1.15rem;
+    border-radius: 0.5rem;
+    margin: 0.15rem 0.75rem;
+    transition: all 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.sidebar .nav-item .nav-link:hover,
+.sidebar .nav-item.active .nav-link {
+    background: rgba(255, 255, 255, 0.14) !important;
+    color: #ffffff !important;
+    transform: translateX(3px);
+}
+
+.sidebar .nav-item .nav-link i {
+    font-size: 1rem;
+    margin-right: 0.65rem;
+    width: 1.25rem;
+    text-align: center;
+}
+
+.sidebar-brand {
+    padding: 1.4rem 1.25rem !important;
+    height: auto !important;
+}
+
+.sidebar-brand .brand-logo-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-heading {
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase;
+    color: #a5b4fc !important;
+    padding: 1rem 1.25rem 0.35rem !important;
+}
+
+/* Modern Topbar & Harmonized Controls */
+.topbar {
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03) !important;
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 1.25rem !important;
+    position: relative;
+    z-index: 1000;
+}
+
+.topbar .navbar-nav {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+}
+
+.topbar .navbar-nav .nav-item {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.topbar .navbar-nav .nav-item .nav-link:not(.topbar-profile-link) {
+    height: auto !important;
+    padding: 0 !important;
+}
+
+/* Unified Topbar Control Pill Buttons */
+.topbar-btn {
+    height: 38px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.8125rem !important;
+    font-weight: 600 !important;
+    border-radius: 9999px !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.topbar-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Method Selector Button */
+.topbar-method-btn {
+    padding: 0 14px !important;
+    gap: 6px;
+    border: 1px solid #c7d2fe !important;
+    background-color: #eef2ff !important;
+    color: #4338ca !important;
+}
+
+.topbar-method-btn.proporsional {
+    border-color: #bae6fd !important;
+    background-color: #f0f9ff !important;
+    color: #0369a1 !important;
+}
+
+.topbar-method-btn:hover,
+.topbar-method-btn:focus {
+    background-color: #e0e7ff !important;
+    color: #3730a3 !important;
+}
+
+.topbar-method-btn.proporsional:hover,
+.topbar-method-btn.proporsional:focus {
+    background-color: #e0f2fe !important;
+    color: #0284c7 !important;
+}
+
+/* Portal Siswa Button */
+.topbar-portal-btn {
+    padding: 0 14px !important;
+    gap: 6px;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #334155 !important;
+}
+
+.topbar-portal-btn:hover {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Theme Toggle Circle Button */
+.topbar-theme-btn {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #4f46e5 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.topbar-theme-btn:hover {
+    background-color: #f8fafc !important;
+    color: #3730a3 !important;
+    border-color: #cbd5e1 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Dapodik Status Live Badge */
+.topbar-dapo-badge {
+    height: 38px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 0 12px !important;
+    gap: 7px;
+    border-radius: 9999px !important;
+    font-size: 0.8125rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
+    border: 1px solid #a7f3d0 !important;
+    background-color: #ecfdf5 !important;
+    color: #059669 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+}
+
+.topbar-dapo-badge:hover {
+    background-color: #d1fae5 !important;
+    color: #047857 !important;
+    transform: translateY(-1px);
+}
+
+/* Header Action Buttons in Dashboard */
+.header-action-btn {
+    height: 38px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.8125rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.2s ease !important;
+    line-height: 1 !important;
+}
+
+.header-action-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Modern Cards */
+.card {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0.85rem !important;
+    box-shadow: var(--card-shadow) !important;
+    transition: all 0.2s ease;
+    background-color: var(--card-bg);
+}
+
+.card:hover {
+    box-shadow: var(--card-shadow-hover) !important;
+}
+
+.card-header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding: 1rem 1.35rem !important;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.35rem !important;
+}
+
+/* Metric / Stat KPI Cards */
+.stat-widget {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-widget .stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.stat-widget .stat-number {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+/* Modern Workflow Stepper */
+.workflow-step-card {
+    background: linear-gradient(135deg, #312e81 0%, #1e1b4b 100%);
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(30, 27, 75, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.stepper-item {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0.85rem;
+    border-radius: 0.65rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    margin-bottom: 0.5rem;
+    transition: all 0.2s;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stepper-item:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+    color: #ffffff !important;
+}
+
+.stepper-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #4338ca;
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Modern Buttons */
+.btn {
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.55rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.25);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+}
+
+.btn-success {
+    background-color: var(--success) !important;
+    border-color: var(--success) !important;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+}
+
+.btn-success:hover {
+    transform: translateY(-1px);
+}
+
+/* Dapodik Status Live Badge */
+.dapo-live-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    padding: 0.4rem 0.85rem !important;
+    border-radius: 9999px !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+}
+
+.dapo-live-badge.connected {
+    background-color: #ecfdf5 !important;
+    color: #059669 !important;
+    border: 1px solid #a7f3d0 !important;
+}
+
+.dapo-live-badge.disconnected {
+    background-color: #fef2f2 !important;
+    color: #dc2626 !important;
+    border: 1px solid #fecaca !important;
+}
+
+.dapo-pulse {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.dapo-pulse.online {
+    background-color: #10b981;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    animation: pulse-green 2s infinite;
+}
+
+.dapo-pulse.offline {
+    background-color: #ef4444;
+}
+
+@keyframes pulse-green {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+/* Modern Badges */
+.badge {
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.4em 0.75em;
+    border-radius: 0.45rem;
+}
+
+.badge-soft-primary {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.badge-soft-success {
+    background-color: var(--success-light);
+    color: var(--success);
+}
+
+.badge-soft-warning {
+    background-color: var(--warning-light);
+    color: var(--warning);
+}
+
+.badge-soft-danger {
+    background-color: var(--danger-light);
+    color: var(--danger);
+}
+
+.badge-soft-info {
+    background-color: var(--info-light);
+    color: var(--info);
+    border: 1px solid #bae6fd;
+}
+
+.badge-soft-secondary {
+    background-color: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+/* Modern DataTables Styling */
+.table {
+    color: var(--text-main);
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--border-color);
+    padding: 0.85rem 1rem;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    padding: 0.85rem 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.88rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

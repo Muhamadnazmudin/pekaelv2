@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Block access to hidden files and internal folders
+    RewriteRule ^\.(.*) - [F,L]
+    RewriteRule ^(app|writable|system|tests|application|system) - [F,L,NC]
+
+    # Checks to see if the user is attempting to access a valid file
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
