@@ -18,7 +18,13 @@ class App extends BaseConfig
      */
     public string $baseURL = 'http://pekael.test/';
 
-    public array $allowedHostnames = ['pekael.test', 'localhost', '127.0.0.1'];
+    public array $allowedHostnames = [
+        'pekael.smkncilimus1.sch.id',
+        'www.pekael.smkncilimus1.sch.id',
+        'pekael.test',
+        'localhost',
+        '127.0.0.1',
+    ];
 
     public string $indexPage = '';
 
@@ -126,7 +132,11 @@ class App extends BaseConfig
      *
      * @var array<string, string>
      */
-    public array $proxyIPs = [];
+    public array $proxyIPs = [
+        '127.0.0.1'       => 'X-Forwarded-For',
+        '::1'             => 'X-Forwarded-For',
+        '192.168.2.252'   => 'X-Forwarded-For',
+    ];
 
     /**
      * --------------------------------------------------------------------------
