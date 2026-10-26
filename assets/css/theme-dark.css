@@ -153,6 +153,59 @@ body.theme-dark .badge-soft-secondary {
 }
 
 /* =========================================
+   3.1 SIDEBAR & COLLAPSE SUBMENU IN DARK MODE
+   ========================================= */
+body.theme-dark .sidebar .collapse-inner,
+body.theme-dark #accordionSidebar .collapse-inner {
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
+}
+
+body.theme-dark .sidebar .collapse-inner .collapse-item,
+body.theme-dark #accordionSidebar .collapse-inner .collapse-item,
+body.theme-dark .sidebar .nav-item .collapse .collapse-inner .collapse-item,
+body.theme-dark .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+    color: #ffffff !important;
+}
+
+body.theme-dark .sidebar .collapse-inner .collapse-item i,
+body.theme-dark #accordionSidebar .collapse-inner .collapse-item i {
+    color: #cbd5e1 !important;
+}
+
+body.theme-dark .sidebar .collapse-inner .collapse-item:hover,
+body.theme-dark #accordionSidebar .collapse-inner .collapse-item:hover,
+body.theme-dark .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover,
+body.theme-dark .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
+    background-color: #334155 !important;
+    color: #ffffff !important;
+}
+
+body.theme-dark .sidebar .collapse-inner .collapse-item:hover i,
+body.theme-dark #accordionSidebar .collapse-inner .collapse-item:hover i {
+    color: #ffffff !important;
+}
+
+body.theme-dark .sidebar .collapse-inner .collapse-item.active,
+body.theme-dark #accordionSidebar .collapse-inner .collapse-item.active,
+body.theme-dark .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
+body.theme-dark .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
+    background-color: #312e81 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+body.theme-dark .sidebar .collapse-inner .collapse-item.active i,
+body.theme-dark #accordionSidebar .collapse-inner .collapse-item.active i {
+    color: #a5b4fc !important;
+}
+
+body.theme-dark .sidebar .collapse-inner .collapse-header,
+body.theme-dark #accordionSidebar .collapse-inner .collapse-header {
+    color: #94a3b8 !important;
+}
+
+/* =========================================
    4. CARDS & PANELS
    ========================================= */
 body.theme-dark .card {

@@ -23,10 +23,10 @@
     <link href="<?= base_url('assets/sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css') ?>" rel="stylesheet">
 
     <!-- Modern Custom Stylesheet -->
-    <link href="<?= base_url('assets/css/modern-custom.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/modern-custom.css') ?>?v=<?= file_exists(FCPATH . 'assets/css/modern-custom.css') ? filemtime(FCPATH . 'assets/css/modern-custom.css') : '1.1' ?>" rel="stylesheet">
 
     <?php if (($tema ?? 'light') === 'dark'): ?>
-    <link href="<?= base_url('assets/css/theme-dark.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/theme-dark.css') ?>?v=<?= file_exists(FCPATH . 'assets/css/theme-dark.css') ? filemtime(FCPATH . 'assets/css/theme-dark.css') : '1.1' ?>" rel="stylesheet">
     <?php endif; ?>
 </head>
 <body id="page-top" class="<?= (($tema ?? 'light') === 'dark') ? 'theme-dark' : '' ?>">
